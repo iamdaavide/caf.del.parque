@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>[[#{caf.del.parque.login.title}]]</title>
+</head>
+<body>
+
+    <form method="POST" th:action="@{/login}">
+        <label for="username">[[#{caf.del.parque.login.form.username}]]</label>
+        <input type="text" name="username" id="username"/>
+
+        <label for="password">[[#{caf.del.parque.login.form.password}]]</label>
+        <input type="password" name="password" id="password"/>
+
+        <button type="submit">[[#{caf.del.parque.login.form.button.login}]]</button>
+    </form>
+</body>
+</html>
